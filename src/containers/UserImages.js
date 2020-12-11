@@ -36,10 +36,10 @@ const UserImages = ({ userId }) => {
       {userImages.map((eachImg) => {
 
         return (
-          <Card key={eachImg.id} style={{ width: "200px" }}>
-            <CardImg src={eachImg.url} alt="Card image cap" style={{ width: "150px" }} />
+          <div key={eachImg.id} style={{ width: "200px" }}>
+            <img src={eachImg.url} alt="Card image cap" style={{ width: "150px" }} />
 
-          </Card>
+          </div>
         )
 
       })}

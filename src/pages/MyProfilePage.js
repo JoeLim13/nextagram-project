@@ -37,7 +37,7 @@ const MyProfilePage = () => {
                 : <LoadingIndicator />
             }
             <Link to={`/profile/me`}>
-                <Button>Upload</Button>
+                <Button color="info">Upload</Button>
             </Link>
         </div>
     )

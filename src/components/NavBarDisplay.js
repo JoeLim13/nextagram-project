@@ -40,7 +40,7 @@ const NavBarDisplay = ({ loggedIn, setLoggedIn }) => {
 
     return (
         <div>
-            <Navbar color="dark" dark expand="md">
+            <Navbar color="info" dark expand="md">
                 <NavbarBrand style={{ cursor: "pointer" }} onClick={() => { history.push("/") }}>Nextagram</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
