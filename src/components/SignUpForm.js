@@ -196,7 +196,7 @@ const SignUpForm = ({ toggleIsLogin, toggle }) => {
             <ModalBody>
                 <FormGroup>
                     <Label for="username">Username</Label>
-                    <Input type="username" name="username" id="username" placeholder="Key in username" value={username} onChange={(e) => { setUsername(e.target.value) }} onChange={handleUsernameInput} {...getInputProp()} />
+                    <Input type="username" name="username" id="username" placeholder="Key in username" value={username} onChange={handleUsernameInput} {...getInputProp()} />
                     {getFormFeedback()}
                     <FormText>Enter a username between 6 and 20 characters</FormText>
                 </FormGroup>
@@ -213,7 +213,7 @@ const SignUpForm = ({ toggleIsLogin, toggle }) => {
                 <FormGroup>
                     <Input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" value={confirmPassword} onChange={confirmPasswordHandler} {...getConfirmPasswordProp()} />{getFormConfirmPasswordFeedback()}
                 </FormGroup>
-                <p>Already a member? <a href="#" onClick={(e) => {
+                <p>Already a member? <a href="/#" onClick={(e) => {
                     e.preventDefault()
                     toggleIsLogin()
                 }}>Log in here</a></p>

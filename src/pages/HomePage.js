@@ -10,14 +10,14 @@ const HomePage = ({ users }) => {
 
     return (
 
-        <div className="d-flex flex-wrap" style={{ margin: "10px" }}>
+        <div>
             {users.map(user => {
                 return (
-                    <div key={user.id} className="row d-flex flex-wrap" style={{ backgroundColor: "lightblue", marginBottom: "10px" }}>
+                    <div key={user.id} className="d-flex" style={{ backgroundColor: "lightblue", marginBottom: "10px", padding: "20px" }}>
 
-                        <Card className="col-3 d-flex align-items-center" style={{ width: "25vw", margin: "0px", borderStyle: "none", backgroundColor: "lightgray", textAlign: "center" }}>
+                        <Card className="col-3 d-flex align-items-center flex-wrap" style={{ width: "25vw", margin: "0px", borderStyle: "none", backgroundColor: "lightgray", textAlign: "center" }}>
 
-                            <CardImg className="rounded-circle" top width="100%" src={user.profileImage} alt="Card image cap" style={{ width: "80%", border: "4px solid white", marginTop: "15px" }} />
+                            <CardImg className="rounded-circle" top width="100%" src={user.profileImage} alt="Card image cap" style={{ width: "200px", border: "4px solid white", marginTop: "15px" }} />
                             <CardBody >
                                 <CardTitle>{user.username}</CardTitle>
                                 <Link to={`/users/${user.id}`}>
@@ -28,7 +28,7 @@ const HomePage = ({ users }) => {
 
                         </Card>
 
-                        <div className="col-9 d-flex flex-wrap" style={{ paddingLeft: "10px" }}>
+                        <div className="col-9 d-flex flex-wrap">
                             <UserImages userId={user.id} />
                         </div>
 

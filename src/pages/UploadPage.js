@@ -44,6 +44,7 @@ const UploadPage = () => {
                         src={previewImage}
                         width="100%"
                         height="100%"
+                        alt="Preview"
                     />
                 ) : (
                         <h3 className="text-center" style={{ paddingTop: '40%' }}>

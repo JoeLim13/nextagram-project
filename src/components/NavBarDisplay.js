@@ -12,7 +12,6 @@ import { useHistory } from 'react-router-dom'
 import AuthModal from '../components/AuthModal'
 import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom';
-import LoadingIndicator from './LoadingIndicator';
 
 const NavBarDisplay = ({ loggedIn, setLoggedIn }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +58,9 @@ const NavBarDisplay = ({ loggedIn, setLoggedIn }) => {
                         <NavItem>
                             {
                                 loggedIn ?
-                                    <Link to="/profile"><NavLink style={{ cursor: "pointer" }}>My Profile</NavLink></Link>
+                                    <Link to="/profile">
+                                        <NavLink style={{ cursor: "pointer" }}>My Profile</NavLink>
+                                    </Link>
                                     :
                                     null
                             }
